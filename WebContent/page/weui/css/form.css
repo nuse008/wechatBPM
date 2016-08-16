@@ -1,0 +1,43 @@
+/* CSS Document */
+
+/*弹出div的样式*/
+#popDiv { 
+display: none;
+position: absolute; 
+border: 1px solid #AEBBCA; 
+background-color: #ffffff; 
+cursor: move; 
+padding: 1px; 
+} 
+
+#popTitle { 
+background: #039702; 
+height: 20px; 
+line-height: 20px; 
+padding: 1px; 
+} 
+
+#popForm { 
+padding: 2px; 
+} 
+
+.title_left { 
+font-weight: bold; 
+padding-left: 5px; 
+float: left; 
+color: #fff; 
+} 
+
+.title_right { 
+float: right; 
+} 
+
+#popTitle .title_right a { 
+color: #fff; 
+text-decoration: none; 
+} 
+
+#popTitle .title_right a:hover { 
+text-decoration: underline; 
+color: #FF0000; 
+} 

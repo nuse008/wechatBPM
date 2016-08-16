@@ -1,0 +1,28 @@
+<Context crossContext="false" reloadable="true" >
+
+	<Resource name="jdbc/default"
+		  auth="Container"
+		  type="javax.sql.DataSource"
+		  factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+		  testWhileIdle="true"
+		  testOnBorrow="true"
+		  testOnReturn="false"
+		  validationQuery="SELECT 1"
+		  validationInterval="30000"
+		  timeBetweenEvictionRunsMillis="30000"
+		  maxActive="100"
+		  minIdle="10"
+		  maxWait="100000"  
+		  initialSize="10"
+		  removeAbandonedTimeout="12000"
+		  removeAbandoned="true"
+		  logAbandoned="true"
+		  minEvictableIdleTimeMillis="30000"
+		  jmxEnabled="true"
+		  jdbcInterceptors="org.apache.tomcat.jdbc.pool.interceptor.ConnectionState;org.apache.tomcat.jdbc.pool.interceptor.StatementFinalizer"
+		  username="sa"
+		  password="pass@123"
+		  driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+		  url="jdbc:sqlserver://182.254.227.178:1433;databasename=WXDB"
+	/>
+</Context>
